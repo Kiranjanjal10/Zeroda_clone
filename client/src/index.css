@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Theme Default */
+    --bg-primary: #111827; /* gray-900 */
+    --bg-secondary: #1F2937; /* gray-800 */
+    --bg-tertiary: #374151; /* gray-700 */
+    --text-primary: #ffffff; /* white */
+    --text-secondary: #D1D5DB; /* gray-300 */
+    --text-muted: #9CA3AF; /* gray-400 */
+    --border-color: #374151; /* gray-700 */
+    --trade-bg: #131722; /* trade-dark */
+    --trade-card: #1E222D; /* trade-card */
+  }
+
+  .light-theme {
+  --bg-primary: #f8f9fa; /* Very light bright gray/white for background */
+  --bg-secondary: #ffffff; /* Pure white for cards and navbars */
+  --bg-tertiary: #f1f5f9; /* Slate 100 for hovers */
+  --text-primary: #0f172a; /* Slate 900 */
+  --text-secondary: #334155; /* Slate 700 */
+  --text-muted: #64748b; /* Slate 500 */
+  --border-color: #e2e8f0; /* Slate 200 */
+  --trade-bg: #f8f9fa;
+  --trade-card: #ffffff;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted); 
+}
